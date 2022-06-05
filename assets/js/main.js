@@ -1,10 +1,5 @@
-/*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
-(function($) {
+(function ($) {
 
 	var	$window = $(window),
 		$body = $('body'),
@@ -129,7 +124,7 @@
 			$navPanelToggle = $(
 				'<a href="#navPanel" id="navPanelToggle">Menu</a>'
 			)
-				.appendTo($wrapper);
+				//.appendTo($wrapper);
 
 			// Change toggle styling once we've scrolled past the header.
 				$header.scrollex({
@@ -160,7 +155,7 @@
 					side: 'right',
 					target: $body,
 					visibleClass: 'is-navPanel-visible'
-				});
+				}); 
 
 			// Get inner.
 				$navPanelInner = $navPanel.children('nav');
