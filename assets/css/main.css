@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100&display=swap");
 
 :root {
-	--main-color: #E66000;
+	--main-color: #D3D3D3;
 	--black: #444;
 	--light-bg: #eee;
 	--bg: #fff;
@@ -2072,35 +2072,35 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		border: 0;
-		border-radius: 0;
-		cursor: pointer;
-		display: inline-block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.8rem;
-		font-weight: 900;
-		letter-spacing: 0.075em;
-		height: 3rem;
-		line-height: 3rem;
-		padding: 0 2rem;
-		text-align: center;
-		text-decoration: none;
-		text-transform: uppercase;
-		white-space: nowrap;
-	}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	border: 0;
+	border-radius: 0;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 0.8rem;
+	font-weight: 900;
+	letter-spacing: 0.075em;
+	height: 3rem;
+	line-height: 3rem;
+	padding: 0 2rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
 
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
@@ -2230,23 +2230,35 @@ button,
 		color: var(--main-color)
 	}
 
-		input[type="submit"].primary,
-		input[type="reset"].primary,
-		input[type="button"].primary,
-		button.primary,
-		.button.primary {
-			background-color: #212931;
-			box-shadow: none;
-			color: #ffffff !important;
+	input[type="submit"].primary,
+	input[type="reset"].primary,
+	input[type="button"].primary,
+	button.primary,
+	.button.primary {
+		background-color: #212931;
+		box-shadow: none;
+		color: #ffffff !important;
+	}
+
+		input[type="submit"].primary:hover,
+		input[type="reset"].primary:hover,
+		input[type="button"].primary:hover,
+		button.primary:hover,
+		.button.primary:hover {
+			background-color: #18bfef;
 		}
 
-			input[type="submit"].primary:hover,
-			input[type="reset"].primary:hover,
-			input[type="button"].primary:hover,
-			button.primary:hover,
-			.button.primary:hover {
-				background-color: #18bfef;
-			}
+	.button.center {
+		width: 10rem;
+		height: 3rem;
+		border-top: var(--border);
+		display: grid;
+		margin: auto;
+		text-align: center;
+		line-height: 3rem;
+		font-size: 0.8rem;
+	}
+
 
 /* Form */
 
@@ -2633,6 +2645,14 @@ button,
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+		}
+		.image.fit_reduced {
+			display: block;
+			margin: auto;
+			transform: scale(0.7);
+			width: 70%;
+			height: 70%;
+			overflow: hidden;
 		}
 
 			.image.fit:first-child {
@@ -3970,7 +3990,9 @@ ul.icons.alt li a.icon:hover:before {
 	color: #909498;
 	cursor: default;
 	position: relative;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
 	width: calc(100% - 4rem);
 	max-width: 72rem;
 	z-index: 2;
@@ -4752,7 +4774,6 @@ ul.icons.alt li a.icon:hover:before {
 	text-align: center;
 	color: var(--black);
 	border-top: var(--border);
-	
 	padding: 10px 0;
 	margin: 0px 0;
 }
