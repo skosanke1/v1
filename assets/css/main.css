@@ -5,7 +5,7 @@
 	--main-color: #D3D3D3;
 	--black: #444;
 	--light-bg: #eee;
-	--bg: #fff;
+	--bg: #DEDEDE;
 	--light-color: #666;
 	--border: 1px solid rgba(0, 0, 0, 0.1);
 	--box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -3799,7 +3799,7 @@ ul.icons.alt li a.icon:hover:before {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			border-top: solid 2px var(--black);
 			margin: 0;
 		}
 
